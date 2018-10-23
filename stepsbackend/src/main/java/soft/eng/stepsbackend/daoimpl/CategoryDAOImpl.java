@@ -3,9 +3,13 @@ package soft.eng.stepsbackend.daoimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import soft.eng.stepsbackend.dao.CategoryDAO;
 import soft.eng.stepsbackend.dto.Category;
 
+
+@Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 	
 	
