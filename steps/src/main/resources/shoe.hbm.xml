@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "shoe" table = "shoe">
+      
+
+      <id name = "id" type = "int" column = "productID">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "shoeName" column = "shoeName" type = "string"/>
+      <property name = "brand" column = "brand" type = "string"/>
+      <property name = "shoeType" column = "shoeType" type = "string"/>
+      <property name = "sex" column = "sex" type = "string"/>
+      <property name = "color" column = "color" type = "string"/>
+      <property name = "size" column = "size" type = "string"/>
+      <property name = "image" column = "image" type = "blob"/>
+      <property name = "material" column = "material" type = "string"/>
+      <property name = "outsole" column = "outsole" type = "string"/>
+      <property name = "insole" column = "insole" type = "string"/>
+      <property name = "shoeDescription" column = "shoeDescription" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
